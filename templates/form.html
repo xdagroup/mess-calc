@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calculator</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+
+	<body align=center>
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4"><legend><h1>MESS POINT CALCULATOR</h1></legend></div>
+			<div class="col-md-4"></div>
+		</div>
+			<br>
+			<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				<form class="form-horizontal" method="post">
+
+					
+					<div class="form-group">
+						<label class="control-label col-xs-3" for="X">X :</label>
+						<div class="col-xs-7">
+							<input type="number" class="form-control" name="X"  value="{{ request.form['var_1'] }}" placeholder="&nbsp;0&nbsp;">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-xs-3" for="B">B :</label>
+						<div class="col-xs-7">
+							<input type="number" class="form-control" name="B"  value="{{ request.form['var_2'] }}" placeholder="&nbsp;0&nbsp;">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-xs-3" for="L">L :</label>
+						<div class="col-xs-7">
+							<input type="number" class="form-control" name="L"  value="{{ request.form['var_2'] }}" placeholder="&nbsp;0&nbsp;">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-xs-3" for="S">S :</label>
+						<div class="col-xs-7">
+							<input type="number" class="form-control" name="S"  value="{{ request.form['var_2'] }}" placeholder="&nbsp;0&nbsp;">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-xs-3" for="BL">B/L :</label>
+						<div class="col-xs-7">
+							<input type="number" class="form-control" name="BL"  value="{{ request.form['var_2'] }}" placeholder="&nbsp;0&nbsp;">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-xs-3" for="BS">B/S :</label>
+						<div class="col-xs-7">
+							<input type="number" class="form-control" name="BS"  value="{{ request.form['var_2'] }}" placeholder="&nbsp;0&nbsp;">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-xs-3" for="LS">L/S :</label>
+						<div class="col-xs-7">
+							<input type="number" class="form-control" name="LS"  value="{{ request.form['var_2'] }}" placeholder="&nbsp;0&nbsp;">
+						</div>
+					</div>
+					
+					
+
+					<div class="form-group">
+            			<div class="col-xs-offset-3 col-xs-9">
+                			<input type="submit" class="btn btn-success" value="Submit">
+                			<input type="reset" class="btn btn-danger" value="Reset">
+            			</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-xs-3">Total points :</label>
+						<div class="col-xs-7">
+							<input type="text" name="result" class="form-control" placeholder={{ entry }}>
+						</div>
+                    </div>
+
+        		</form>
+        	</div>
+        	<div class="col-md-4"></div></div>
+		</div>
+	</body>
+</html>
